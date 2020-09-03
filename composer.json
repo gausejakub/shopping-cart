@@ -1,0 +1,54 @@
+{
+    "name": "gausejakub/shopping-cart",
+    "description": "Abstract shopping cart for Laravel",
+    "keywords": [
+        "gausejakub",
+        "shopping-cart"
+    ],
+    "homepage": "https://github.com/gausejakub/shopping-cart",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jakub Gause",
+            "email": "gause.jakub@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gausejakub\\ShoppingCart\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Gausejakub\\ShoppingCart\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gausejakub\\ShoppingCart\\ShoppingCartServiceProvider"
+            ],
+            "aliases": {
+                "ShoppingCart": "Gausejakub\\ShoppingCart\\ShoppingCartFacade"
+            }
+        }
+    }
+}
