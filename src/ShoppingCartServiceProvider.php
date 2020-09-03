@@ -18,6 +18,7 @@ class ShoppingCartServiceProvider extends ServiceProvider
          */
         // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'shopping-cart');
         // $this->loadViewsFrom(__DIR__.'/../resources/views', 'shopping-cart');
+        $this->loadFactoriesFrom(__DIR__.'/../database/factories');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
         $this->loadRoutesFrom(__DIR__.'/routes.php');
 
