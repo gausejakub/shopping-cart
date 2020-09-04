@@ -11,23 +11,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d62d7bc9-acf2-412d-a287-fdfe583246c4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/database/factories/ShoppingCartFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/factories/ShoppingCartItemFactory.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Http/ShoppingCartsController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Functional/FunctionalTestCase.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Functional/ShoppingCarts/DeleteShoppingCartTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Functional/ShoppingCarts/GetShoppingCartTest.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/Functional/ShoppingCarts/StoreShoppingCartTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Requests/StoreShoppingCartRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Http/ShoppingCartController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Repositories/ShoppingCartRepositoryTest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Requests/StoreShoppingCartRequestTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ShoppingCartServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCartServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Facades/ShoppingCartFacade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facades/ShoppingCartFacade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Http/ShoppingCartsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Http/ShoppingCartsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repositories/ShoppingCartRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/ShoppingCartRepository.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -127,7 +125,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/tests/Functional/ShoppingCarts" />
-    <property name="settings.editor.selected.configurable" value="php.test.frameworks.configurable" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -142,34 +140,34 @@
       <recent name="$PROJECT_DIR$/src/Models" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.DeleteShoppingCartTest.can_delete_shopping_cart">
-    <configuration name="DeleteShoppingCartTest.can_delete_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Gausejakub\ShoppingCart\Tests\Functional\ShoppingCarts\DeleteShoppingCartTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Functional/ShoppingCarts/DeleteShoppingCartTest.php" method="can_delete_shopping_cart" scope="Method" />
+  <component name="RunManager" selected="PHPUnit.StoreShoppingCartRequestTest">
+    <configuration name="ShoppingCartRepositoryTest.can_create_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Repositories\ShoppingCartRepositoryTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Repositories/ShoppingCartRepositoryTest.php" method="can_create_shopping_cart" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="GetShoppingCartTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Gausejakub\ShoppingCart\Tests\Functional\ShoppingCarts\GetShoppingCartTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Functional/ShoppingCarts/GetShoppingCartTest.php" scope="Class" />
+    <configuration name="StoreShoppingCartRequestTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Requests\StoreShoppingCartRequestTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Requests/StoreShoppingCartRequestTest.php" scope="Class" />
       <method v="2" />
     </configuration>
-    <configuration name="GetShoppingCartTest.can_create_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Gausejakub\ShoppingCart\Tests\Functional\ShoppingCarts\GetShoppingCartTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Functional/ShoppingCarts/StoreShoppingCartTest.php" method="can_create_shopping_cart" scope="Method" />
+    <configuration name="StoreShoppingCartRequestTest.handle_creates_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Requests\StoreShoppingCartRequestTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Requests/StoreShoppingCartRequestTest.php" method="handle_creates_shopping_cart" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="GetShoppingCartTest.can_get_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Gausejakub\ShoppingCart\Tests\Functional\ShoppingCarts\GetShoppingCartTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Functional/ShoppingCarts/GetShoppingCartTest.php" method="can_get_shopping_cart" scope="Method" />
+    <configuration name="StoreShoppingCartRequestTest.handle_return_true_when_shopping_cart_is_created_without_exception" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Requests\StoreShoppingCartRequestTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Requests/StoreShoppingCartRequestTest.php" method="handle_return_true_when_shopping_cart_is_created_without_exception" scope="Method" />
       <method v="2" />
     </configuration>
-    <configuration name="ShoppingCartTest.uuid_is_created_by_default_for_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Model\ShoppingCartTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Model/ShoppingCartTest.php" method="uuid_is_created_by_default_for_shopping_cart" scope="Method" />
+    <configuration name="StoreShoppingCartRequestTest.handle_returns_false_when_create_shopping_cart_method_throws_exception" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Requests\StoreShoppingCartRequestTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Requests/StoreShoppingCartRequestTest.php" method="handle_returns_false_when_create_shopping_cart_method_throws_exception" scope="Method" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="PHPUnit.DeleteShoppingCartTest.can_delete_shopping_cart" />
-        <item itemvalue="PHPUnit.GetShoppingCartTest.can_create_shopping_cart" />
-        <item itemvalue="PHPUnit.GetShoppingCartTest" />
-        <item itemvalue="PHPUnit.GetShoppingCartTest.can_get_shopping_cart" />
-        <item itemvalue="PHPUnit.ShoppingCartTest.uuid_is_created_by_default_for_shopping_cart" />
+        <item itemvalue="PHPUnit.StoreShoppingCartRequestTest" />
+        <item itemvalue="PHPUnit.StoreShoppingCartRequestTest.handle_returns_false_when_create_shopping_cart_method_throws_exception" />
+        <item itemvalue="PHPUnit.StoreShoppingCartRequestTest.handle_return_true_when_shopping_cart_is_created_without_exception" />
+        <item itemvalue="PHPUnit.StoreShoppingCartRequestTest.handle_creates_shopping_cart" />
+        <item itemvalue="PHPUnit.ShoppingCartRepositoryTest.can_create_shopping_cart" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +180,8 @@
       <option name="presentableId" value="Default" />
       <updated>1599154848186</updated>
       <workItem from="1599154849300" duration="1941000" />
-      <workItem from="1599156881933" duration="5907000" />
+      <workItem from="1599156881933" duration="6085000" />
+      <workItem from="1599235096171" duration="2658000" />
     </task>
     <servers />
   </component>
@@ -206,34 +205,36 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599157106480" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1599164447956">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1599238427338">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1599164447956" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1599164447955">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1599238427338" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1599238427337">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1599164447955" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1599164447955">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1599238427337" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1599238427337">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1599164447955" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1599164447956">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1599238427337" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1599238427338">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1599164447956" />
-    <state x="660" y="293" key="NewPhpClassDialog" timestamp="1599163941474">
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1599238427338" />
+    <state x="660" y="293" key="NewPhpClassDialog" timestamp="1599238498543">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="660" y="293" key="NewPhpClassDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599163941474" />
+    <state x="660" y="293" key="NewPhpClassDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599238498543" />
+    <state x="660" y="310" key="NewPhpClassDialog/0.23.1792.1097@0.23.1792.1097" timestamp="1599236510293" />
     <state x="715" y="490" key="NewPhpFileDialog" timestamp="1599162677794">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="715" y="490" key="NewPhpFileDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599162677794" />
-    <state x="397" y="199" key="SettingsEditor" timestamp="1599159864669">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="397" y="218" key="SettingsEditor" timestamp="1599235148992">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="397" y="199" key="SettingsEditor/0.0.1792.1120@0.0.1792.1120" timestamp="1599159864669" />
+    <state x="397" y="218" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1599235148992" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1599163695506">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>

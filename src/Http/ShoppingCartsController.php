@@ -5,6 +5,7 @@ namespace Gausejakub\ShoppingCart\Http;
 
 
 use Gausejakub\ShoppingCart\Models\ShoppingCart;
+use Gausejakub\ShoppingCart\Requests\StoreShoppingCartRequest;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -24,18 +25,17 @@ class ShoppingCartsController extends Controller
     }
 
     /**
-     * @param Request $request
+     * @param StoreShoppingCartRequest $request
      * @return JsonResponse
      */
-    public function store(Request $request): JsonResponse
+    public function store(StoreShoppingCartRequest $request): JsonResponse
     {
-        $shoppingCart = ShoppingCart::create([
-            'owner_id' => $request->owner_id,
-        ]);
+        $result = $request->handle();
+        $data = $request->responseData();
 
         return response()->json([
-            'success' => true,
-            'data' => $shoppingCart,
+            'success' => $result,
+            'data' => $data,
         ]);
     }
 

@@ -2,12 +2,15 @@
 
 namespace Gausejakub\ShoppingCart\Facades;
 
+use Gausejakub\ShoppingCart\Models\ShoppingCart;
 use Illuminate\Support\Facades\Facade;
 
 /**
  * Class ShoppingCartItemFacade
  * @package Gausejakub\ShoppingCart
  * @see \Gausejakub\ShoppingCart\Repositories\ShoppingCartRepository;
+ *
+ * @method ShoppingCart create(string $ownerId)
  */
 class ShoppingCartFacade extends Facade
 {
