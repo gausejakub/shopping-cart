@@ -22,12 +22,23 @@ class ShoppingCartItem extends Model
     /**
      * @var string
      */
+    protected $primaryKey = 'id';
+
+    /**
+     * @var bool
+     */
+    public $incrementing = true;
+
+    /**
+     * @var string
+     */
     protected $table = 'shopping_cart_items';
 
     /**
      * @var string[]
      */
     protected $fillable = [
+        'id',
         'name',
         'price',
         'quantity',

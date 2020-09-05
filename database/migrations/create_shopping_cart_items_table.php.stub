@@ -14,7 +14,7 @@ class CreateShoppingCartItemsTable extends Migration
     public function up()
     {
         Schema::create('shopping_cart_items', function (Blueprint $table) {
-            $table->uuid('id');
+            $table->bigIncrements('id');
             $table->string('name');
             $table->integer('price');
             $table->integer('quantity');
