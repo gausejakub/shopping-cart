@@ -34,6 +34,17 @@ class ShoppingCartRepository
     }
 
     /**
+     * Find Shopping Cart by id
+     *
+     * @param $id
+     * @return ShoppingCart|null
+     */
+    public function findById($id)
+    {
+        return ShoppingCart::where('id', $id)->first();
+    }
+
+    /**
      * Find Shopping Cart by owner_id
      *
      * @param $ownerId
