@@ -11,9 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d62d7bc9-acf2-412d-a287-fdfe583246c4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shopping-cart.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shopping-cart.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/assets/components/ShoppingCart.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/ShoppingCart.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShoppingCartServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCartServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,7 +177,7 @@
       <updated>1599154848186</updated>
       <workItem from="1599154849300" duration="1941000" />
       <workItem from="1599156881933" duration="6085000" />
-      <workItem from="1599235096171" duration="7518000" />
+      <workItem from="1599235096171" duration="7976000" />
     </task>
     <servers />
   </component>

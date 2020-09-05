@@ -28,7 +28,7 @@ class ShoppingCartServiceProvider extends ServiceProvider
             ], 'config');
 
             $this->publishes([
-                __DIR__ . '/../resources/assets' => resource_path('assets/vendor/shopping-cart'
+                __DIR__ . '/../resources/js' => resource_path('js/vendor/shopping-cart'
             )], 'vue-components');
 
             // Publishing the views.
