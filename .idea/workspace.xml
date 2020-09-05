@@ -11,10 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d62d7bc9-acf2-412d-a287-fdfe583246c4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/assets/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/assets/components/ShoppingCart.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Repositories/ShoppingCartRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/ShoppingCartRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Model/ShoppingCartItemTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Models/ShoppingCartItemTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Model/ShoppingCartTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Models/ShoppingCartTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ShoppingCartServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/ShoppingCartServiceProvider.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +177,7 @@
       <updated>1599154848186</updated>
       <workItem from="1599154849300" duration="1941000" />
       <workItem from="1599156881933" duration="6085000" />
-      <workItem from="1599235096171" duration="5789000" />
+      <workItem from="1599235096171" duration="6523000" />
     </task>
     <servers />
   </component>
@@ -201,22 +201,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599157106480" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1599290370890">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1599290762315">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370890" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1599290370889">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1599290762315" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1599290762315">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370889" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1599290370888">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1599290762314" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1599290762314">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370888" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1599290370889">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1599290762314" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1599290762315">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370889" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1599290762315" />
     <state x="660" y="293" key="NewPhpClassDialog" timestamp="1599238498543">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
