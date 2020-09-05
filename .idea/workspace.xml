@@ -13,7 +13,8 @@
     <list default="true" id="d62d7bc9-acf2-412d-a287-fdfe583246c4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repositories/ShoppingCartRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repositories/ShoppingCartRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Unit/Repositories/ShoppingCartRepositoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Repositories/ShoppingCartRepositoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Model/ShoppingCartItemTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Models/ShoppingCartItemTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Unit/Model/ShoppingCartTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Unit/Models/ShoppingCartTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,13 +136,9 @@
       <recent name="$PROJECT_DIR$/src/Models" />
     </key>
   </component>
-  <component name="RunManager" selected="PHPUnit.ShoppingCartRepositoryTest.can_find_shopping_cart_by_id">
+  <component name="RunManager" selected="PHPUnit.ShoppingCartTest">
     <configuration name="ShoppingCartControllerTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Http\ShoppingCartControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Http/ShoppingCartsControllerTest.php" scope="Class" />
-      <method v="2" />
-    </configuration>
-    <configuration name="ShoppingCartControllerTest.store_methods_returns_valid_failed_json_response" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
-      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Http\ShoppingCartControllerTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Http/ShoppingCartsControllerTest.php" method="store_methods_returns_valid_failed_json_response" scope="Method" />
       <method v="2" />
     </configuration>
     <configuration name="ShoppingCartRepositoryTest.can_delete_shopping_cart" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
@@ -156,13 +153,17 @@
       <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Repositories\ShoppingCartRepositoryTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Repositories/ShoppingCartRepositoryTest.php" method="can_find_shopping_cart_by_owner_id" scope="Method" />
       <method v="2" />
     </configuration>
+    <configuration name="ShoppingCartTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Gausejakub\ShoppingCart\Tests\Unit\Models\ShoppingCartTest" configuration_file="$PROJECT_DIR$/phpunit.xml.dist" file="$PROJECT_DIR$/tests/Unit/Models/ShoppingCartTest.php" scope="Class" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="PHPUnit.ShoppingCartTest" />
         <item itemvalue="PHPUnit.ShoppingCartRepositoryTest.can_find_shopping_cart_by_id" />
         <item itemvalue="PHPUnit.ShoppingCartRepositoryTest.can_find_shopping_cart_by_owner_id" />
         <item itemvalue="PHPUnit.ShoppingCartRepositoryTest.can_delete_shopping_cart" />
         <item itemvalue="PHPUnit.ShoppingCartControllerTest" />
-        <item itemvalue="PHPUnit.ShoppingCartControllerTest.store_methods_returns_valid_failed_json_response" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +177,7 @@
       <updated>1599154848186</updated>
       <workItem from="1599154849300" duration="1941000" />
       <workItem from="1599156881933" duration="6085000" />
-      <workItem from="1599235096171" duration="5474000" />
+      <workItem from="1599235096171" duration="5789000" />
     </task>
     <servers />
   </component>
@@ -200,22 +201,22 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="634" y="322" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1599157106480" />
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1599290340197">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom" timestamp="1599290370890">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1599290340197" />
-    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1599290340196">
+    <state width="1750" height="318" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370890" />
+    <state width="1750" height="318" key="GridCell.Tab.0.center" timestamp="1599290370889">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1599290340196" />
-    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1599290340196">
+    <state width="1750" height="318" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370889" />
+    <state width="1750" height="318" key="GridCell.Tab.0.left" timestamp="1599290370888">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1599290340196" />
-    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1599290340197">
+    <state width="1750" height="318" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370888" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right" timestamp="1599290370889">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1599290340197" />
+    <state width="1750" height="318" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1599290370889" />
     <state x="660" y="293" key="NewPhpClassDialog" timestamp="1599238498543">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
