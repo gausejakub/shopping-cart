@@ -11,6 +11,20 @@ use Gausejakub\ShoppingCart\Tests\Unit\UnitTestCase;
 final class ShoppingCartRepositoryTest extends UnitTestCase
 {
     /** @test */
+    public function can_find_shopping_cart_by_owner_id(): void
+    {
+        /** @var ShoppingCart $shoppingCart */
+        $shoppingCart = factory(ShoppingCart::class)->create();
+
+        $shoppingCartRepository = new ShoppingCartRepository();
+
+        $returnedShoppingCart = $shoppingCartRepository->findByOwnerId($shoppingCart->owner_id);
+
+        $this->assertInstanceOf(ShoppingCart::class, $shoppingCart);
+        $this->assertEquals($shoppingCart->fresh(), $returnedShoppingCart);
+    }
+
+    /** @test */
     public function can_create_shopping_cart(): void
     {
         $shoppingCartRepository = new ShoppingCartRepository();

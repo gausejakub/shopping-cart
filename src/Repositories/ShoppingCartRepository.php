@@ -32,4 +32,15 @@ class ShoppingCartRepository
     {
         return $shoppingCart->delete();
     }
+
+    /**
+     * Find Shopping Cart by owner_id
+     *
+     * @param $ownerId
+     * @return ShoppingCart|null
+     */
+    public function findByOwnerId($ownerId)
+    {
+        return ShoppingCart::where('owner_id', $ownerId)->first();
+    }
 }
