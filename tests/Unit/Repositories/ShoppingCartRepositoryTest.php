@@ -23,4 +23,18 @@ final class ShoppingCartRepositoryTest extends UnitTestCase
             'owner_id' => 'testing-owner-id',
         ]);
     }
+
+    /** @test */
+    public function can_delete_shopping_cart(): void
+    {
+        $shoppingCart = factory(ShoppingCart::class)->create();
+        $shoppingCartRepository = new ShoppingCartRepository();
+
+        $result = $shoppingCartRepository->delete($shoppingCart);
+
+        $this->assertTrue($result);
+        $this->assertDatabaseMissing('shopping_carts', [
+            'id' => $shoppingCart->id,
+        ]);
+    }
 }

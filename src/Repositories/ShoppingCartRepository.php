@@ -20,4 +20,16 @@ class ShoppingCartRepository
             'owner_id' => $ownerId,
         ]);
     }
+
+    /**
+     * Delete Shopping Cart
+     *
+     * @param ShoppingCart $shoppingCart
+     * @return bool
+     * @throws \Exception
+     */
+    public function delete(ShoppingCart $shoppingCart): bool
+    {
+        return $shoppingCart->delete();
+    }
 }
