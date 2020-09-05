@@ -1,7 +1,7 @@
 # Very short description of the package
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/gausejakub/shopping-cart.svg?style=flat-square)](https://packagist.org/packages/gausejakub/shopping-cart)
-[![Build Status](https://img.shields.io/travis/gausejakub/shopping-cart/master.svg?style=flat-square)](https://travis-ci.org/gausejakub/shopping-cart)
+[![Build Status](https://travis-ci.com/gausejakub/shopping-cart.svg?token=D4G8AdwyiYwNt3kRQz7D&branch=master)](https://travis-ci.org/gausejakub/shopping-cart)
 [![Quality Score](https://img.shields.io/scrutinizer/g/gausejakub/shopping-cart.svg?style=flat-square)](https://scrutinizer-ci.com/g/gausejakub/shopping-cart)
 [![Total Downloads](https://img.shields.io/packagist/dt/gausejakub/shopping-cart.svg?style=flat-square)](https://packagist.org/packages/gausejakub/shopping-cart)
 
