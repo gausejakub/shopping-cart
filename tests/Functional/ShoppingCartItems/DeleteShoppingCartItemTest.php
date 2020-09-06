@@ -27,7 +27,7 @@ final class DeleteShoppingCartItemTest extends FunctionalTestCase
     public function cannot_delete_shopping_cart_item_through_shopping_cart_that_does_not_own_this_item(): void
     {
         $shoppingCart = factory(ShoppingCart::class)->create();
-        $shoppingCartItem = factory(ShoppingCartItem::class)->create();
+        $shoppingCartItem = factory(ShoppingCartItem::class)->create(['shopping_cart_id' => 'random-string']);
 
         $response = $this->deleteJson("/shopping-carts/{$shoppingCart->id}/items/{$shoppingCartItem->id}");
 
