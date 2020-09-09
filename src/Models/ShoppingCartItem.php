@@ -10,12 +10,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * Class ShoppingCartItem
  * @package Gausejakub\ShoppingCart
  *
+ * @property-read int $id
  * @property string $name
  * @property int $price
  * @property int $quantity
  * @property string|null $description
  * @property string $shopping_cart_id
  * @property ShoppingCart $shoppingCart
+ * @property-read int $totalPrice
  */
 class ShoppingCartItem extends Model
 {
@@ -52,5 +54,15 @@ class ShoppingCartItem extends Model
     public function shoppingCart(): BelongsTo
     {
         return $this->belongsTo(ShoppingCart::class);
+    }
+
+    /**
+     * Price of item count to one unit
+     *
+     * @return int
+     */
+    public function getTotalPriceAttribute(): int
+    {
+        return (int)($this->price * $this->quantity);
     }
 }
