@@ -11,7 +11,11 @@ use Illuminate\Support\Facades\Facade;
  * @package Gausejakub\ShoppingCart
  * @see \Gausejakub\ShoppingCart\Repositories\ShoppingCartItemRepository;
  *
- * @method ShoppingCartItem create(ShoppingCart $shoppingCart, string $name, int $price, int $quantity, ?string $description)
+ * @method static ShoppingCartItem create(ShoppingCart $shoppingCart, string $name, int $price, int $quantity, ?string $description)
+ * @method static bool delete(ShoppingCartItem $shoppingCartItem)
+ * @method static bool setQuantity(ShoppingCartItem $shoppingCartItem, int $quantity)
+ * @method static bool increaseQuantity(ShoppingCartItem $shoppingCartItem)
+ * @method static bool decreaseQuantity(ShoppingCartItem $shoppingCartItem)
  */
 class ShoppingCartItemFacade extends Facade
 {

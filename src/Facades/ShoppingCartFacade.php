@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Facade;
  * @package Gausejakub\ShoppingCart
  * @see \Gausejakub\ShoppingCart\Repositories\ShoppingCartRepository;
  *
- * @method ShoppingCart create(string $ownerId)
+ * @method static ShoppingCart create(string $ownerId)
  */
 class ShoppingCartFacade extends Facade
 {

@@ -8,32 +8,29 @@ use Gausejakub\ShoppingCart\Models\ShoppingCart;
 use Gausejakub\ShoppingCart\Models\ShoppingCartItem;
 use Gausejakub\ShoppingCart\Tests\Functional\FunctionalTestCase;
 
-final class UpdateShoppingCartItemTest extends FunctionalTestCase
+final class DecreaseShoppingCartItemQuantityTest extends FunctionalTestCase
 {
     /** @test */
-    public function can_update_shopping_cart_item(): void
+    public function can_decrease_shopping_cart_item_quantity(): void
     {
         $shoppingCart = factory(ShoppingCart::class)->create();
         $shoppingCartItem = factory(ShoppingCartItem::class)->create([
-            'shopping_cart_id' => $shoppingCart->id
-        ]);
-
-        $response = $this->putJson("/shopping-carts/{$shoppingCart->id}/items/{$shoppingCartItem->id}", [
+            'shopping_cart_id' => $shoppingCart->id,
             'quantity' => 10,
         ]);
+
+        $response = $this->postJson("/shopping-carts/{$shoppingCart->id}/items/{$shoppingCartItem->id}/decrease");
 
         $response->assertStatus(200);
     }
 
     /** @test */
-    public function cannot_delete_shopping_cart_item_through_shopping_cart_that_does_not_own_this_item(): void
+    public function cannot_decrease_shopping_cart_item_quantity_through_shopping_cart_that_does_not_own_this_item(): void
     {
         $shoppingCart = factory(ShoppingCart::class)->create();
         $shoppingCartItem = factory(ShoppingCartItem::class)->create();
 
-        $response = $this->putJson("/shopping-carts/{$shoppingCart->id}/items/{$shoppingCartItem->id}", [
-            'quantity' => 10,
-        ]);
+        $response = $this->postJson("/shopping-carts/{$shoppingCart->id}/items/{$shoppingCartItem->id}/decrease");
 
         $response->assertStatus(404);
     }
