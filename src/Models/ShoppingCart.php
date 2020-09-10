@@ -17,6 +17,8 @@ use Illuminate\Support\Str;
  * @property Carbon $created_at
  * @property Carbon $updated_at
  * @property-read Collection $items
+ * @property-read int $total
+ *
  * @method bool update(array $attributes = [])
  */
 class ShoppingCart extends Model
@@ -67,5 +69,15 @@ class ShoppingCart extends Model
     public function items(): HasMany
     {
         return $this->hasMany(ShoppingCartItem::class);
+    }
+
+    /**
+     * Sum all total prices of shopping cart items
+     *
+     * @return int
+     */
+    public function getTotalAttribute(): int
+    {
+        return $this->items->sum('totalPrice');
     }
 }

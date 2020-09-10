@@ -20,7 +20,11 @@ class ShoppingCartsController extends Controller
     public function show(Request $request, ShoppingCart $shoppingCart): JsonResponse
     {
         return response()->json([
-            'data' => $shoppingCart
+            'data' => [
+                'id' => $shoppingCart->id,
+                'total' => $shoppingCart->total,
+                'items' => $shoppingCart->items,
+            ]
         ]);
     }
 
