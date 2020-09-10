@@ -15,8 +15,8 @@ class TestCase extends \Orchestra\Testbench\TestCase
 
     protected function getEnvironmentSetUp($app)
     {
-        include_once __DIR__ . '/../database/migrations/create_shopping_carts_table.php.stub';
-        include_once __DIR__ . '/../database/migrations/create_shopping_cart_items_table.php.stub';
+        include_once __DIR__ . '/../database/migrations/create_shopping_carts_table.php';
+        include_once __DIR__ . '/../database/migrations/create_shopping_cart_items_table.php';
 
         (new \CreateShoppingCartsTable)->up();
         (new \CreateShoppingCartItemsTable)->up();
